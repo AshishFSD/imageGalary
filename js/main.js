@@ -10,9 +10,8 @@ for (let i = 0; i < 12; i++) {
             '<img src="https://picsum.photos/150/150?random=+' + num + 'class="main_image">' +
 
             '<div class="overlay">' +
-            '<a href="https://picsum.photos/150/150?random=' + num + " " + 'download>' +
             '<i class="fa fa-arrow-circle-down"></i>' +
-            '</a>' +
+       
             '<button onClick="showModel()"><i class="fa fa-plus-square"></i></button>' +
             '</div>' +
             '</div>';
