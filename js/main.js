@@ -16,9 +16,6 @@ for (let i = 0; i < 12; i++) {
             '<button onClick="showModel()"><i class="fa fa-plus-square"></i></button>' +
             '</div>' +
             '</div>';
-
-
-      console.log(div)
 }
 
 
