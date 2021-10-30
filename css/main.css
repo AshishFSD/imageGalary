@@ -1,0 +1,324 @@
+
+
+/* Google font Link 
+// font-family: 'Montserrat', sans-serif;
+//Selected Style   >> Light300 >> Regular400 >> Medium 500 >> semi-bold 600>> Bold 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+/*  
+
+// Website color details that will be used hole website
+// color will be used  on font, Body, footer, button , icon,
+// link, hover ect
+
+*/
+
+
+:root{
+  --white:#f1faee;
+  --blue:#545AE7;
+  --black:#000814;
+  --footer-header:#31343D;
+
+}
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ color: #000814;
+}
+
+
+
+:root{
+
+      --header-link-pading:1rem;   /* 16px */
+}
+/* Header section
+// color , hover , link-color and font 
+*/
+
+header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow:0 ;
+      background-color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      padding: 1rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: none 0;
+      position: fixed;
+      top:0;
+      width: 100%;
+      z-index: 1;
+
+}
+.logo{
+}
+
+.logo>h1{
+      color: var(--white);
+      background-color: #252641;
+      padding:.1rem;
+      animation-name: image-word;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      transition: background-color , 5s;
+      animation-delay: 5s;
+
+
+}
+.logo>h1>span{
+      color: var(--black);
+      background-color: var(--white);
+      animation-name: galry-word;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      transition: background-color , 4s;
+      animation-delay: 5s;
+
+}
+
+
+/* Logo animation */
+@keyframes image-word {
+      from {background-color:#252641;; color: white;}
+      to {background-color:var(--white); color: black;}
+    }
+
+    @keyframes galry-word {
+      from {background-color:var(--white); color: black;}   
+      to {background-color:#252641;; color: white;}
+      
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+      width: 50%;
+}
+
+.navlink{
+      display: flex;
+      justify-content: space-around;
+      font-weight: 500;
+      font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+/* Search section css  */
+
+.hero-search{
+      background-color: var(--footer-header);
+      height: 15rem;
+      margin-top: 10%;
+}
+.search-bor{ 
+      display: flex;
+      width: 50%;
+      margin: 0 auto;
+      justify-content: space-between;
+      
+}
+
+.search-bor>h1{
+      font-family: 'Montserrat', sans-serif;
+      color: #f1faee;
+      font-size: 3.5rem;
+}
+
+
+
+.btn:hover{
+      background-color: #fff;
+      color: #000;
+       transition: all 1s;
+}
+
+
+
+
+/***********Image galary css *****/
+.container{
+      margin:  5rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 186px);
+      grid-template-rows:200px 200px 200px;
+      width: 80%;
+      background-color: var(--white);
+}
+
+
+.image-container{
+      width: 25%;
+      height: 25%;
+      position: relative;
+}
+
+.image-container>img{
+      width: 10rem;
+      height: auto;
+      border-radius: 1rem;
+}
+.image-container>img:hover{
+    
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      width: 11rem;
+      transition: width 4s;
+      border-radius: 0;
+}
+
+.overlay{
+     
+      top:10%;
+      left: 20%;
+      width: 100%;
+      position: absolute;
+      transition: .5s ease;
+      opacity:0;
+      color: white;
+      display: flex;
+     gap:4rem
+      
+}
+.fa{
+      color: #fff;
+      font-size: 2rem;
+      margin: .1rem;
+      cursor: pointer;
+     
+}
+
+
+    /* when mouse over download icon and + icon will be visible*/
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+
+
+
+
+
+    /* Model css  */
+
+
+    .model {
+      width: 60%;
+      height: 60%;
+      background-color:#fff;
+      margin:0 auto;
+      position: absolute;
+       top:50%;
+       left: 20%;
+       border-radius: 1rem;
+      overflow: hidden;
+       display: none;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       transition: width 4s;
+       transition: height 4s;
+       z-index: 5;
+
+    }
+  
+    .top_model{
+     width: 80%;
+     background-color:var(--footer-header);
+     height: 20%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+
+    }
+
+    .top_model .fas
+    {
+          color: #fff;
+          font-size: 2.4rem;
+          padding: 1rem;
+          cursor: pointer;
+    }
+
+    .download{
+      width: 6rem;
+      border: none;
+      font-weight: 800;
+      background-color:var(--footer-header);
+      color: #fff;
+      cursor: pointer;
+}
+
+    .top_model .fas:hover,
+    .download:hover{
+          background-color: var(--white);
+          color: var(--black);
+          transition: all 2s;
+    }
+
+    .image_dis{
+          width: 80%;
+          margin: 1rem auto;
+          display: flex;
+          justify-content: space-between;
+    }
+
+    .image_dis >img {
+          width: 40%;
+          border-radius: 1rem;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  
+    .dis{
+          width: 50%;
+          font-family: 'Montserrat', sans-serif;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer CSS */
+
+footer{
+      background-color: var(--footer-header);
+      height: 10rem;
+}

@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+
+      .navbar{
+            display: none;
+      }
+      
+     
+     .search-bor> h1{
+           font-size: 2rem;
+           margin-top: 1rem;
+     }
+     
+
+    
+     
+
+}
