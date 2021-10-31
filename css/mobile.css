@@ -5,13 +5,31 @@
       }
       
      
-     .search-bor> h1{
-           font-size: 2rem;
-           margin-top: 1rem;
+      .search-bar>h1{
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 100px;
+      }
+
+
+     .model{
+           width: 100%;
+           transform: 0;
+           padding: 0;
+       
      }
-     
 
-    
-     
+      .image_dis{
+            width: 90%;
+            flex-direction: column;
+      }
 
+     .image_dis >img {
+           width:200px;
+           height: 200px;
+           margin: 0 auto;
+     }
+     .dis{
+           width: 100%;
+     }
 }

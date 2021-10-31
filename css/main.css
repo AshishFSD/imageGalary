@@ -44,6 +44,12 @@
 // color , hover , link-color and font 
 */
 
+body{
+      position: relative;
+      background-color: var(--white);
+}
+
+
 header{
       display: flex;
       justify-content: space-around;
@@ -164,9 +170,9 @@ header{
 
 /***********Image galary css *****/
 .container{
-      margin: 10rem auto;
+      margin: 5rem auto;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 186px);
+      grid-template-columns: repeat(auto-fill, 200px);
       grid-template-rows:200px 200px 200px;
       width: 80%;
       background-color: var(--white);
@@ -244,7 +250,7 @@ header{
     }
   
     .top_model{
-     width: 80%;
+     width: 90%;
      background-color:var(--footer-header);
      height: 20%;
      margin: 0 auto;
