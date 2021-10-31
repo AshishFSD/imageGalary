@@ -134,18 +134,21 @@ header{
       height: 15rem;
       margin-top: 10%;
 }
-.search-bor{ 
+.search-bar{ 
       display: flex;
-      width: 50%;
-      margin: 0 auto;
-      justify-content: space-between;
+      flex-direction: column;
+     width: 50%;
+    margin: 0 auto;
+      
       
 }
 
-.search-bor>h1{
+.search-bar>h1{
       font-family: 'Montserrat', sans-serif;
       color: #f1faee;
       font-size: 3.5rem;
+      text-align: center;
+      margin-top: 2rem;
 }
 
 
@@ -161,12 +164,13 @@ header{
 
 /***********Image galary css *****/
 .container{
-      margin:  5rem auto;
+      margin: 10rem auto;
       display: grid;
       grid-template-columns: repeat(auto-fill, 186px);
       grid-template-rows:200px 200px 200px;
       width: 80%;
       background-color: var(--white);
+      justify-content: center;
 }
 
 
@@ -224,20 +228,18 @@ header{
 
 
     .model {
-      width: 60%;
-      height: 60%;
-      background-color:#fff;
-      margin:0 auto;
       position: absolute;
-       top:50%;
-       left: 20%;
-       border-radius: 1rem;
-      overflow: hidden;
-       display: none;
-       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-       transition: width 4s;
-       transition: height 4s;
-       z-index: 5;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+      z-index: 10;
+      margin-bottom: 4.5rem;
+      display: none;
 
     }
   
@@ -296,7 +298,21 @@ header{
           gap: 1rem;
     }
 
+    .modelOverlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 5;
+      transition: all 0.5s;
+    }
 
+    .hidden {
+      display: none;
+    }
 
 
 

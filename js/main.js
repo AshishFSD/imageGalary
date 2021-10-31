@@ -11,7 +11,7 @@ for (let i = 0; i < 12; i++) {
 
             '<div class="overlay">' +
             '<i class="fa fa-arrow-circle-down"></i>' +
-       
+
             '<button onClick="showModel()"><i class="fa fa-plus-square"></i></button>' +
             '</div>' +
             '</div>';
@@ -35,7 +35,6 @@ const button = document.getElementsByTagName('button');
 
 let model_image = document.getElementById('model_image');
 
-
 for (let i = 0; i < button.length; i++) {
       button[i].addEventListener('click', () => {
             let imagePath = img[i].getAttribute('src');
@@ -46,17 +45,22 @@ for (let i = 0; i < button.length; i++) {
 
 
 
+////////////////////////////////////////////////////////
+////// Modal section toggler  
 
 
+const modelOverlay = document.querySelector('.modelOverlay');
 
 function showModel() {
-      model.style.display = "block"
+      model.style.display = "block";
+      modelOverlay.classList.remove('hidden')
 
 
 }
 
 function closeModel() {
       model.style.display = "none"
+      modelOverlay.classList.add('hidden')
 }
 
 /*********** Model data  */
