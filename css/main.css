@@ -237,9 +237,8 @@ header{
 
     .model {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 25%;
+      left: 10%;
       width: 60%;
       background-color: white;
       padding: 1rem;
@@ -248,8 +247,20 @@ header{
       z-index: 10;
       margin-bottom: 4.5rem;
       display: none;
+      animation-name: zoom;
+      animation-duration: 0.6s;
 
     }
+    
+    @keyframes zoom {
+      from {transform:scale(0)}
+      to {transform:scale(1)}
+    }
+
+
+
+
+
   
     .top_model{
      width: 90%;
