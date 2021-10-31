@@ -47,6 +47,7 @@
 body{
       position: relative;
       background-color: var(--white);
+      font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -177,6 +178,7 @@ header{
       width: 80%;
       background-color: var(--white);
       justify-content: center;
+     
 }
 
 
@@ -343,4 +345,24 @@ header{
 footer{
       background-color: var(--footer-header);
       height: 10rem;
+      color: #fff;
+}
+
+footer> h1{
+      color:#fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+
+}
+
+footer> p{
+      text-align: center;
+      color: var(--white);
+      font-weight: 200;
+      border-top: .1px solid var(--white);
 }
