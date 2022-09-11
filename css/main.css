@@ -52,46 +52,30 @@ body{
 
 
 header{
+      width: 100vw;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      box-shadow:0 ;
       background-color: var(--white);
-      font-family: 'Montserrat', sans-serif;
       padding: 1rem;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      transition: none 0;
+      box-shadow: 2px 1px 3px rgb(200, 204, 200);
       position: fixed;
       top:0;
-      width: 100%;
-      z-index: 1;
-
-}
-.logo{
+      left: 0;
+      
 }
 
-.logo>h1{
-      color: var(--white);
-      background-color: #252641;
-      padding:.1rem;
-      animation-name: image-word;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      transition: background-color , 5s;
-      animation-delay: 5s;
-
-
+.navlink{
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
 }
-.logo>h1>span{
-      color: var(--black);
-      background-color: var(--white);
-      animation-name: galry-word;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      transition: background-color , 4s;
-      animation-delay: 5s;
 
-}
+
+
+
+
+
 
 
 /* Logo animation */
