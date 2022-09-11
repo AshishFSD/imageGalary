@@ -48,7 +48,7 @@ for (let i = 0; i < button.length; i++) {
             let imagePath = img[i].getAttribute('src');
             model_image.setAttribute('src', `${imagePath}`)
 
-      })
+      
 }
 
 
