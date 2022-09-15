@@ -1,25 +1,30 @@
 
 //=========getting input value=============
 
- var number =0;
+
+  
 
    const input = document.getElementsByTagName('input');
-    let value = input[0].value;
-   input[1].addEventListener('click', ()=>{
-         let inputval = input[0].value;
-         number= number+input;
+   var val = 0;
+   input[1].addEventListener('click', (val)=>{
+             val += input[0].value;
    } )
   
- 
 
-    console.log(number);
+    console.log(val);
+ 
+   
+
+  
+
+
 
 
 
 
  
    const imageUrl ="https://picsum.photos/200/300?random="; 
-   for(let i=0; i<10; i++){
+   for(let i=0; i<30; i++){
       let url =imageUrl +i;
       const row = document.createElement("div");
       row.setAttribute("class" ,"row");
@@ -40,6 +45,7 @@
 
       document.getElementById('main').appendChild(row);
    }
+    
  
 
 
